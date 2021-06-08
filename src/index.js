@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const publicStaticPath = path.join(__dirname, '../public');
 
-app.use(express.json);
+app.use(express.json());
 app.use(express.static(publicStaticPath));
 
 app.listen(port, () => {
